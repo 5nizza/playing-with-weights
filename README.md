@@ -9,6 +9,8 @@ average = w1*t1 + w2*t2 + w3*t3.
 ```
 The problem is that we do not know the actual types $t1,t2,t3$: we measure them, but the measurements maybe imprecise. Therefore, given a table of examples of weights-types and resulting averages, we want to learn the function `real_average`.
 
+# Files
+
 - `generate_data.py` generates a tab-separated data in the format
 ```
 t1  t2  t3  w1  w2  w3  diff  average  perfect_average  real_average
