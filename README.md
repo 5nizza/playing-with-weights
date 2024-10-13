@@ -1,12 +1,10 @@
 # What is this?
 
 Suppose a container contains rocks of different type, which are loaded in batches. There are at most three slices, each having a type (a number from 1 to 4), and a weight.
-![](Pasted image 20241013233639.png)
+![](20241013233639.png)
 
 We want to compute the weighted average type of the container:
-$$
-average = w1*t1 + w2*t2 + w3*t3.
-$$
+$$average = w1*t1 + w2*t2 + w3*t3.$$
 The problem is that we do not know the actual types $t1,t2,t3$: we measure them, but the measurements maybe imprecise. Therefore, given a table of examples of weights-types and resulting averages, we want to learn the function `real_average`.
 
 - `generate_data.py` generates a tab-separated data in the format
