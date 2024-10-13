@@ -1,7 +1,7 @@
 # What is this?
 
 Suppose a container contains rocks of different type, which are loaded in batches. There are at most three slices, each having a type (a number from 1 to 4), and a weight.
-![[Pasted image 20241013233639.png]]
+![](Pasted image 20241013233639.png)
 
 We want to compute the weighted average type of the container:
 $$
@@ -23,13 +23,13 @@ t1  t2  t3  w1  w2  w3  diff  average  perfect_average  real_average
 1. `python3 ./generate_data.tsv > data.tsv`
 2. `python3 ./all_graphs.py ./data.tsv`
 
-![[all_graphs.png]]
+![](all_graphs.png)
 
 3. `python3 ./heat_map.py ./data.tsv`
-![[heat_map.png]]
+![](heat_map.png)
 4. `python3 ./regression_with_hyperopt.py ./data.tsv`
 
-![[results.png]]
+![](results.png)
 After about 5 minutes, a decent regression model is found: 
 ```
 {'learner': SVR(C=1.248634607901186, coef0=0.7928013919304228, degree=2,
